@@ -1,0 +1,209 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html{
+    font-size: 16px;
+}
+     
+   .navbar img{
+    width: 16vw !important;
+    height: 6vw !important;
+   border-radius: 50% !important;
+   margin-left: 20% !important;
+}
+.navbar{
+    background-color:rgb(54, 48, 48);
+    border-bottom-right-radius: 8.4vw !important;
+}
+.fa-bars{
+    font-size: 3vw !important;
+    color:white;
+}
+
+
+/* <!-- ------------------------------------first section--------------------------------------------- --> */
+.backgroundimg{
+    background-image: url('https://ilm.com.pk/wp-content/uploads/2018/03/Punjab-Government-School-Timings-During-Ramzan-2018-Private.jpg');
+    background-size: 100vw;
+    height: 40vw;
+    filter: contrast(1.65);
+}
+.backgroundimg h1{
+    font-size: 7rem;
+    position: relative;
+    top: 10rem;
+    left: 3rem;
+    color:white;
+}
+.fluid-img{
+    position: relative;
+    bottom: 8vw !important;
+    width: 100%;
+    
+
+}
+
+
+/* <!-- ------------------------------------second section--------------------------------------------- --> */
+.time{
+    height: 35vw !important;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   width: 80% !important;
+   margin: auto !important;
+   border-radius: 15rem 0rem !important;
+   margin-bottom: 1rem !important;
+   border-top: .09rem dashed rgb(46, 70, 70);
+   border-bottom: .03rem !important;
+   box-shadow: 1rem 1rem 1rem #888888;
+}
+.off{
+    background-color: rgb(226, 69, 69);
+    color: white;
+    padding: .02rem !important;
+}
+
+
+
+@media(max-width:321px){
+   
+    .time{
+        height: 30vw;
+        border-radius: 10rem 0rem;
+    }
+    .time{
+        height: 46vw;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+       width: 100%;
+       margin: auto;
+       border-radius: 15rem 0rem;
+       margin-bottom: 1rem !important;
+       border-top: .09rem dashed rgb(46, 70, 70);
+       border-bottom: .03rem;
+       box-shadow: 1rem 1rem 1rem #888888;
+       font-size: 10px !important;
+    }
+    .off{
+        background-color: rgb(226, 69, 69);
+        color: white;
+        padding: .02rem;
+    }
+    
+}
+@media(max-width:768px){
+   
+    .time{
+        height: 30vw;
+        border-radius: 10rem 0rem;
+    }
+    .time{
+        height: 46vh !important;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+       width: 85%;
+       margin: auto;
+       border-radius: 15rem 0rem;
+       margin-bottom: 1rem !important;
+       border-top: .09rem dashed rgb(46, 70, 70);
+       border-bottom: .03rem;
+       box-shadow: 1rem 1rem 1rem #888888;
+       font-size: 10px !important;
+    }
+    .off{
+        background-color: rgb(226, 69, 69);
+        color: white;
+        padding: .02rem;
+    }
+    
+}
+
+
+
+
+
+
+
+/* <!-- ------------------------------------third section--------------------------------------------- --> */
+.sixth h1{
+    color: #003566;
+  text-shadow:  5px 10px 15px #918686 !important;
+}
+
+.social-icons{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.social-icons img{
+    width: 5vw !important;
+    transition: 0.5s;
+    
+    
+}
+.social-icons a:hover img{
+    transform: translateY(-1rem);
+}
+
+.footer{
+    background-color:rgb(54, 48, 48);
+    color: white;
+}
+.footer-box h5{
+    margin-bottom: 1.7rem !important;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-box .fa{
+    margin-right: 0.5rem !important;
+    font-size: 1.3rem !important;
+    height: 3vw !important;
+    width: 3vw !important;
+    text-align: center !important;
+    padding-top: .5rem !important;
+    border-radius: .2rem !important;
+    background-image:linear-gradient(to right, #261329,#32203b);
+}
+
+
+hr{
+    background-color: white;
+    position: relative;
+    left: 3.5rem;
+    margin-bottom: 1rem !important;
+}
+
+
+
+/* <!-- ------------------------------------forth  section--------------------------------------------- --> */
+/* <!-- ------------------------------------fifth section--------------------------------------------- --> */
+@media(max-width:992px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .adv img{
+        display: none;
+    }
+}
+@media(max-width:321px){
+    html{
+        font-size: 35%;
+    }
+
+}

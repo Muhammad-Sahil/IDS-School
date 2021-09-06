@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body class="bg-right">
+
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-10 col-11 mx-auto">
+        <nav aria-label="breadcrumb mb-3 ">
+          <ol class="breadcrumb bg-common">
+            <li class="breadcrumb-item active"> Home</li>
+            <li class="breadcrumb-item"><a href="#"> User</a></li>
+            <!-- <li class="breadcrumb-item "><a href="adminprofile.html">profile setting </a></li> -->
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 d-md-block d-none">
+            <div class="card bg-common card-left">
+              <div class="card-body">
+                <nav class="nav d-md-block">
+                  <a data-toggle="tab" class="nav-link active" aria-current="page" href="#admin">
+                    <i class="fas fa-user mr-1"></i> Admin</a>
+
+                  <a data-toggle="tab" class="nav-link" href="#signup">
+                    <i class="fas fa-user-cog mr-1"></i>Sign Up Detail</a>
+
+                
+
+                </nav>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- -----------------------right side div start--------------------- -->
+
+
+          <div class="col-lg-9 col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link active" href="#admin"><i class="fas fa-user mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#signup"> <i class="fas fa-user-cog mr-1"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- user data which is live start---------------------  -->
+              <div class="card-body tab-content b-0">
+
+                <!-- // actual profile data........ -->
+                <div class="tab-pane active" id="admin">
+                  <h6 class="text-center">This is Admin page</h6>
+                  <hr>
+                  <h4>Text Advertizement</h4>
+                  
+<input type="text" name="" id="advtext" class="inp">
+<button onclick="foo()" class="btn-outline-info">Add</button>
+<button onclick="clearData()" class="btn-outline-warning">Clear Data</button>
+<div id="full">
+</div>
+<div  class="d-flex justify-content-end ">
+<button onclick="logout()" class="btn-outline-danger">Logout</button>
+</div>                
+                </div>
+                <!-- // actual account data........ -->
+                <div class="tab-pane " id="signup">
+                  <h6 class="text-center">For checking Sign Up detail, click on the below button</h6>
+                  <hr>
+                  <a href="signupdetail.html" type="btn btn-outline-info mr-auto">Sign Up Detail</a>
+                 
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- firebase connection.......... -->
+  
+    <!-- // Import the functions you need from the SDKs you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+   
+    <!-- // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCMNgTnOdw6FswIgw6ked0j7aerq44pYpQ",
+      authDomain: "intellectual-dream-school.firebaseapp.com",
+      databaseURL: "https://intellectual-dream-school-default-rtdb.firebaseio.com",
+      projectId: "intellectual-dream-school",
+      storageBucket: "intellectual-dream-school.appspot.com",
+      messagingSenderId: "369166550105",
+      appId: "1:369166550105:web:659a756578da062f115d48",
+      measurementId: "G-B1B14C0BE4"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        console.log(firebase)
+  </script>
+
+  <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

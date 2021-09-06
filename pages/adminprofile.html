@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body class="bg-right">
+
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-10 col-11 mx-auto">
+        <nav aria-label="breadcrumb mb-3 ">
+          <ol class="breadcrumb bg-common">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#"> User</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profile setting</li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 d-md-block d-none">
+            <div class="card bg-common card-left">
+              <div class="card-body">
+                <nav class="nav d-md-block">
+                  <a data-toggle="tab" class="nav-link active" aria-current="page" href="#profile">
+                    <i class="fas fa-user mr-1"></i> Profile</a>
+
+                  <a data-toggle="tab" class="nav-link" href="#account">
+                    <i class="fas fa-user-cog mr-1"></i> Account Setting</a>
+
+                  <a data-toggle="tab" class="nav-link" href="#security">
+                    <i class="fas fa-user-shield mr-1"></i> Security</a>
+
+                  <a data-toggle="tab" class="nav-link" href="#notification">
+                    <i class="fas fa-bell mr-1"></i> Notification</a>
+
+                  <a data-toggle="tab" class="nav-link" href="#billing">
+                    <i class="fas fa-money-check-alt mr-1"></i> Billing</a>
+
+                </nav>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- -----------------------right side div start--------------------- -->
+
+
+          <div class="col-lg-9 col-md-8">
+            <div class="card">
+              <div class="card-header border-bottom mb-3 d-md-none">
+                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link active" href="#profile"><i class="fas fa-user mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#account"> <i class="fas fa-user-cog mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#security"><i class="fas fa-user-shield mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link" href="#notification"> <i class="fas fa-bell mr-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" class="nav-link " href="#billing"> <i
+                        class="fas fa-money-check-alt mr-1"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- user data which is live start---------------------  -->
+              <div class="card-body tab-content b-0">
+
+                <!-- // actual profile data........ -->
+                <div class="tab-pane active" id="profile">
+                  <h6>YOUR PROFILE INFORMATION</h6>
+                  <hr>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Full Name</label>
+                      <input type="text" class="form-control" placeholder="Sahil">
+                      <small class="form-text text-muted">Enter your full name</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Your Bio</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Write something"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">URL</label>
+                      <input type="text" class="form-control" placeholder="URL">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Location</label>
+                      <input type="text" class="form-control" placeholder="Location">
+                    </div>
+                    <div class="form-group form-text text-muted small">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, officia!
+                    </div>
+                    <br>
+                    <button class="btn btn-outline-info" type="button">Update Profile</button>
+                    <button class="btn btn-outline-info" type="reset">Rest Changes</button>
+                  </form>
+                </div>
+                <!-- // actual account data........ -->
+                <div class="tab-pane " id="account">
+                  <h6>ACCOUNT SETTINGS</h6>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Full Name</label>
+                      <input type="text" class="form-control" placeholder="Sahil">
+                      <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Unde, officia!</small>
+                    </div>
+                  </form>
+                  <hr>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1" class="text-danger">Delete Account</label>
+                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, officia!</p>
+
+                    </div>
+                    <button class="btn btn-danger" type="reset">Rest Changes</button>
+                  </form>
+                </div>
+
+
+
+
+
+
+                <!-- // actual security data........ -->
+                <div class="tab-pane " id="security">
+                  <h6>This is the security tab </h6>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Change password</label>
+                      <input type="password" class="form-control" placeholder="Your Current password">
+                      <br>
+                      <input type="password" class="form-control" placeholder="new Current password">
+                      <input type="password" class="form-control" placeholder="confirm Current password">
+                    </div>
+                  </form>
+                  <hr>
+                  <form>
+                    <div class="form-group ">
+                      <label class="d-block">Two Factor Authentication</label>
+                      <button class="btn btn-outline-info" type="submit">Enable two-factor Authentication</button>
+                      <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+                        officia!</p>
+                    </div>
+                  </form>
+
+                  <hr>
+                  <form>
+                    <div class="form-group ">
+                      <label class="d-block">Sessions</label>
+                      <p class="text-muted small">This is a list of devices,that have logged into your account. Revoke
+                        any sessions that you do not recognize.</p>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div>
+                            <h6>Pokhara 28.2096 N, 83.9856</h6>
+                            <small class="text-muted">Your current session seen in Nepal</small>
+                          </div>
+                          <button class="btn btn-light btn-sm ml-auto" type="button">more Info</button>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+
+
+                <!-- // actual notification data........ -->
+                <div class="tab-pane " id="notification">
+                  <h6>Notification Settings</h6>
+                  <hr>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1">Security Alerts</label>
+                      <small class="form-text text-muted">After changing your username, your old username becomes
+                        available for anyone else to claim</small>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Email each time a vulnerability is found
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Email a digest summary of vulnerability
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- //SMS notification part...... -->
+                    <div class="mb-3">
+                      <label class="d-block mb-2"> SMS Notification</label>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          Comments
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Update From People
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Update From Google
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Reminders
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Events
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          Pages You Follow
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="" checked>
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+                <!-- // actual billing data........ -->
+                <div class="tab-pane " id="billing">
+                  <h6>Billing Settings </h6>
+                  <hr>
+                  <form>
+                    <div class="mb-3">
+                      <label class="d-block">Payment Method</label>
+                      <small class="text-muted small d-block">You have not added not a payment method</small>
+                      <br>
+                      <button class="btn btn-outline-info">Add Payment Method</button>
+                    </div>
+                    <div class="mb-3">
+                      <label class="d-block">Payment History</label>
+                      <div class="border p-3 text-center">
+                        You have not made any payment
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+<!-- firebase connection........................ -->
+
+    <!-- // Import the functions you need from the SDKs you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+   
+    <!-- // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCMNgTnOdw6FswIgw6ked0j7aerq44pYpQ",
+      authDomain: "intellectual-dream-school.firebaseapp.com",
+      databaseURL: "https://intellectual-dream-school-default-rtdb.firebaseio.com",
+      projectId: "intellectual-dream-school",
+      storageBucket: "intellectual-dream-school.appspot.com",
+      messagingSenderId: "369166550105",
+      appId: "1:369166550105:web:659a756578da062f115d48",
+      measurementId: "G-B1B14C0BE4"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        console.log(firebase)
+  </script>
+
+
+  <script src="../js/admin.js"></script>
+
+</body>
+
+</html>
